@@ -1,0 +1,45 @@
+﻿@model AspMom2.Models.BookTable
+@{
+
+}
+    <partial name="../Shared/_MainHeaderPartial.cshtml" />
+    <span class="mt-5 text-center text-success display-4">@ViewData["BookingOutput"]</span>
+<div id="bookTable" class="text-center">
+    <h3 class="mb-5 text-center">Fyll i formuläret för att boka bord</h3>
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <label asp-for="Name"></label>
+        <br />
+        <input asp-for="Name" />
+        <br />
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <br />
+        <label asp-for="Email"></label>
+        <br />
+        <input asp-for="Email" />
+        <br />
+        <span asp-validation-for="Email" class="text-danger"></span>
+        <br />
+        <label asp-for="PhoneNumber"></label>
+        <br />
+        <input asp-for="PhoneNumber" />
+        <br />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        <br />
+        <label asp-for="Date"></label>
+        <br />
+        <input asp-for="Date" value="" />
+        <br />
+        <span asp-validation-for="Date" class="text-danger"></span>
+        <br />
+        <label asp-for="Time"></label>
+        <br />
+        <input asp-for="Time" />
+        <br />
+        <span asp-validation-for="Time" class="text-danger"></span>
+        <br />
+        <input type="submit" value="Boka nu" class="btn btn-primary" />
+        <br />
+    </form>
+    <a asp-controllers="Home" asp-action="Bookings" id="bookings">Mina bokningar</a>
+</div>

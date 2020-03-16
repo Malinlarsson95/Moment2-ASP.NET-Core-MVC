@@ -1,0 +1,194 @@
+﻿html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #2A363B;
+}
+/*HEADER*/
+header {
+    position: relative;
+}
+#logo img {
+    position: absolute;
+    top: 3%;
+    right: 0%;
+    width: 25%;
+    height: auto;
+}
+/*NAV*/
+nav {
+    background-color: #E84A5F;
+}
+    nav a {
+        font-family: roboto, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.2em;
+        text-transform: uppercase;
+        color: #FECEA8;
+    }
+    nav a:hover {
+        color: #2A363B;
+    }
+h1 {
+    color: #E84A5F;
+    font-family: roboto-slab, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    margin: 4% 0 2% 0;
+}
+/*MAINCONTENT*/
+#maincontent {
+    margin: 0 auto;
+    max-width: 1550px;
+}
+    #maincontent p {
+        font-size: 2em;
+        color: #FECEA8;
+        max-width: 850px;
+        text-align: center;
+        margin: 0 auto 2%;
+    }
+#picturesStartPage {
+    margin: 7% auto 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #E84A5F;
+    text-align: center;
+    padding: 1% 0 1%;
+    margin: 7% 0 0 0;
+}
+    footer ul {
+        font-family: roboto, sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 1.8em;
+        color: #FECEA8;
+        list-style: none;
+    }
+    footer li {
+        margin: 0.1% auto;
+    }
+
+    /*Menu-page*/
+h2 {
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #E84A5F;
+}
+h3 {
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    color: #FECEA8;
+}
+h4 {
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2em;
+    color: #FECEA8;
+}
+
+/*CHANGE MENU*/
+
+form label {
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2em;
+    color: #FECEA8;
+}
+form input[type=text], form input[type=number], form input[type=email], form input[type=tel], form input[type=date], form input[type=time] {
+    width: 35%;
+    padding: 0.3% 0 0.3% 0.5%;
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.8em;
+}
+form input[type=submit] {
+    width: 15%;
+    margin: 1% 0 0 0;
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.8em;
+}
+form input[type=checkbox] {
+    margin: 0 0 0 1%;
+}
+form select {
+    width: 35%;
+    padding: 0.3% 0 0.3% 0.5%;
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.8em;
+    color: black;
+}
+form span {
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.6em;
+}
+#date {
+    width: 50%;
+    font-size: 3em;
+}
+#bookings {
+    display: block;
+    width: 15%;
+    margin: 2% auto 0;
+    padding: 0.3% 0;
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.8em;
+    color: white;
+    background-color: #E84A5F;
+    transition-duration: 300ms;
+}
+#bookings:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #c6394c;
+}
+
+@media only screen and (max-width: 768px) {
+    form input[type=text], form input[type=number], form input[type=email], form input[type=tel], form input[type=date], form input[type=time], form select {
+        width: 65%;
+    }
+
+    form input[type=submit] {
+        width: 30%;
+    }
+    #bookings {
+        width: 30%;
+        padding: 1% 0;
+    }
+}
+@media only screen and (max-width: 576px) {
+    form input[type=text], form input[type=number], form input[type=email], form input[type=tel], form input[type=date], form input[type=time], form select {
+        width: 90%;
+    }
+
+    form input[type=submit] {
+        width: 40%;
+    }
+
+    #bookings {
+        width: 40%;
+        padding: 1% 0;
+    }
+}

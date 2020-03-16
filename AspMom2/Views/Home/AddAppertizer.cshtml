@@ -1,0 +1,42 @@
+﻿@model AspMom2.Models.Appetizer
+@{
+}
+    <partial name="../Shared/_MainHeaderPartial.cshtml" />
+
+    <div id="addAppertizer" class="text-center">
+        <h3 class="text-success">@ViewData["output"]</h3>
+        <form method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <label asp-for="Name"></label>
+            <br />
+            <input asp-for="Name" class="text-center" />
+            <br />
+            <span asp-validation-for="Name" class="text-danger"></span>
+            <br />
+            <label asp-for="Type" class="mt-3"></label>
+            <br />
+            <select asp-for="Type">
+                <option value="" disabled selected hidden>Välj typ</option>
+                <option value="Fisk och skaldjur">Fisk och skaldjur</option>
+                <option value="Vegetarisk">Vegetarisk</option>
+                <option value="Kyckling">Kyckling</option>
+                <option value="Nötkött">Nötkött</option>
+            </select>
+            <br />
+            <span asp-validation-for="Type" class="text-danger"></span>
+            <br />
+            <label asp-for="Price" class="mt-3"></label>
+            <br />
+            <input asp-for="Price" class="text-center" value="0" />
+            <br />
+            <span asp-validation-for="Price" class="text-danger"></span>
+            <br />
+            <label asp-for="Glutenfri" class="mt-3"></label>
+            <input asp-for="Glutenfri" />
+            <br />
+            <label asp-for="Laktosfri"></label>
+            <input asp-for="Laktosfri" />
+            <br />
+            <input type="submit" value="Lägg till förrätt" class="btn btn-primary" />
+        </form>
+    </div>

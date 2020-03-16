@@ -1,0 +1,28 @@
+﻿@model AspMom2.Models.BookTable
+
+@{
+}
+    <partial name="../Shared/_MainHeaderPartial.cshtml" />
+
+<div id="yourBooking" class="text-center">
+    <h3>@ViewData["bookings"]</h3>
+
+    @if (ViewData["bookings"] == null)
+    {
+        <h3>@Html.DisplayNameFor(model => model.Name)</h3>
+        <h4>@Html.DisplayFor(model => model.Name)</h4>
+        <br />
+        <h3>@Html.DisplayNameFor(model => model.Email)</h3>
+        <h4>@Html.DisplayFor(model => model.Email)</h4>
+        <br />
+        <h3>@Html.DisplayNameFor(model => model.PhoneNumber)</h3>
+        <h4>@Html.DisplayFor(model => model.PhoneNumber)</h4>
+        <br />
+        <h3>@Html.DisplayNameFor(model => model.Date)</h3>
+        <h4>@Html.DisplayFor(model => model.Date)</h4>
+        <br />
+        <h3>@Html.DisplayNameFor(model => model.Time)</h3>
+        <h4>@Html.DisplayFor(model => model.Time)</h4>
+    }
+
+</div>

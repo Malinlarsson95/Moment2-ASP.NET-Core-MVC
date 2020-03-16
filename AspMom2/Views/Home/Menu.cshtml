@@ -1,0 +1,80 @@
+﻿@model IEnumerable<AspMom2.Models.Appetizer>
+@{
+
+}
+<div id="headline" class="text-center">
+    <h1>@ViewBag.Text</h1>
+</div>
+<div id="firstSection" class="row d-flex justify-content-md-center">
+    <div id="firstCourse" class="mt-5 col-md text-center">
+        <h2 class="mb-5">Förrätter</h2>
+        <!--Skriver ut från filen appertizer-->
+        @foreach (var appetizer in Model)
+        {
+    <div class="appetizer mb-4">
+        <h3>@appetizer.Name</h3>
+        @if (appetizer.Glutenfri && appetizer.Laktosfri)
+        {
+            <h4>@appetizer.Name (glutenfri, laktosfri)</h4>
+        }
+        else if (appetizer.Glutenfri)
+        {
+            <h4>@appetizer.Name (glutenfri)</h4>
+        }
+        else if (appetizer.Laktosfri)
+        {
+            <h4>@appetizer.Name (laktosfri)</h4>
+        }
+        else
+        {
+            <h4>@appetizer.Name</h4>
+        }
+        <h3>@appetizer.Price kr</h3>
+    </div>
+        }
+    </div>
+    <div id="firstImage" class="mt-5 col-md text-center">
+        <img src="~/images/menuimg1.jpg" alt="förrätt" class="w-75"/>
+    </div>
+</div>
+<div id="secondSection" class="row d-flex flex-md-row-reverse">
+    <div id="secondCourse" class="mt-5 col-md text-center">
+        <h2 class="mb-5">Varmrätter</h2>
+        <div class="maincourse mb-4">
+            <h3>Club Sandwich</h3>
+            <h4>Kyckling (laktosfri)</h4>
+            <h3>195 kr</h3>
+        </div>
+        <div class="maincourse mb-4">
+            <h3>Biff rydberg</h3>
+            <h4>Nöttkött (glutenfri, laktosfri)</h4>
+            <h3>259 kr</h3>
+        </div>
+        <div class="maincourse mb-4">
+            <h3>Stekt röding med potatispuré</h3>
+            <h4>Fisk och skaldjur (glutenfri)</h4>
+            <h3>259 kr</h3>
+        </div>
+    </div>
+    <div id="secondImage" class="mt-5 col-md  text-center">
+        <img src="~/images/menuimg2.jpg" alt="Club sandwich" class="w-75 " />
+    </div>
+</div>
+<div id="thirdSection" class="row d-flex ">
+    <div id="thirdCourse" class="mt-5 col-md text-center">
+        <h2 class="mb-5">Efterrätter</h2>
+        <div class="dessert mb-4">
+            <h3>Bakad mjölkchoklad</h3>
+            <h4>Vegetarisk (glutenfri)</h4>
+            <h3>79 kr</h3>
+        </div>
+        <div class="dessert mb-4">
+            <h3>Creme brulée</h3>
+            <h4>Vegetarisk (glutenfri)</h4>
+            <h3>65 kr</h3>
+        </div>
+    </div>
+    <div id="thirdImage" class="mt-5 col-md text-center">
+        <img src="~/images/menuimg3.jpg" alt="Chokladkaka" class="w-75" />
+    </div>
+</div>

@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "Skagen toast med räkor",
+    "Type": "Fisk och skaldjur",
+    "Price": 105,
+    "Glutenfri": false,
+    "Laktosfri": false
+  },
+  {
+    "Name": "Tzaziki med vitlöksbröd",
+    "Type": "Vegetarisk",
+    "Price": 65,
+    "Glutenfri": false,
+    "Laktosfri": false
+  },
+  {
+    "Name": "Råbiff",
+    "Type": "Nötkött",
+    "Price": 160,
+    "Glutenfri": true,
+    "Laktosfri": true
+  },
+  {
+    "Name": "Råbiff",
+    "Type": "Nötkött",
+    "Price": 80,
+    "Glutenfri": true,
+    "Laktosfri": true
+  }
+]
